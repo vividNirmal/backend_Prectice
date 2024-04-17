@@ -16,7 +16,7 @@ process.env.AWS_DEFAULT_REGION;
 // ap-northeast-1
 
 const client = new DynamoDBClient({
-  region: process.env.AWS_DEFAULT_REGION,
+  region: 'ap-south-1'
 });
 
 const docClient = DynamoDBDocumentClient.from(client);
